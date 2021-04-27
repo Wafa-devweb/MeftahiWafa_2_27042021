@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'ralewayextralight_italic';
+    src: url('raleway-extralightitalic-webfont.woff2') format('woff2'),
+         url('raleway-extralightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
