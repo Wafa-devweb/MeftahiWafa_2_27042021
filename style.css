@@ -1,6 +1,55 @@
+
+/* téléchargement de la Police Raleway*/
 @font-face {
     font-family: 'ralewayextralight_italic';
     src: url('raleway-extralightitalic-webfont.woff2') format('woff2'),
          url('raleway-extralightitalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
+/* GENERALE */
+.container {
+     font-family: 'Raleway', sans-serif;
+     margin: 0px;
+     padding: 2em;
+}
+/* **************** barre navigation ************* */
+.navigateur{
+     display: flex;
+     justify-content: space-between;
+     margin-top: 10px;
+ }
+ .logo{
+     height: 50px; 
+ }
+ .menu {
+   display: flex;
+ }
+ nav ul{
+     display: flex;
+     align-items: center;
+ }
+ nav li {
+     list-style: none;
+ }
+ nav a {
+     color:black;
+     padding-left: 2em;
+     padding-right: 2em;
+     padding-top: 3.2em;
+ }
+ nav li :hover {
+     border-top: 2px solid #0065fc;
+     color: #0065fc;
+ }
+ .signin {
+     display: flex;
+     align-items: center;
+     padding-bottom: 8px;
+ } 
+ .signin a {
+     text-decoration: none;
+     font-weight: bold;
+     color: #0065fc;
+     padding-left: 2em;
+ }
