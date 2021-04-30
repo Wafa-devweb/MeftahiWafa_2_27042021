@@ -12,8 +12,9 @@
      font-family: 'Raleway', sans-serif;
      margin: 0px;
      padding: 2em;
-}
-/* **************** barre navigation ************* */
+}/* **************************HEADER************************** */
+
+/* ********** barre de navigation ********** */
 .navigateur{
      display: flex;
      justify-content: space-between;
@@ -28,8 +29,6 @@
  nav ul{
      display: flex;
      align-items: center;
- }
- nav li {
      list-style: none;
  }
  nav a {
@@ -46,10 +45,40 @@
      display: flex;
      align-items: center;
      padding-bottom: 8px;
- } 
- .signin a {
+}
+.signin a {
      text-decoration: none;
      font-weight: bold;
      color: #0065fc;
      padding-left: 2em;
  }
+/* *********** Recherche  ******** */
+.blocSearch {
+     padding-top: 1.5em;
+}
+h1{
+    font-size: 20px;
+}
+.Search {
+     background-color: #f2f2f2;
+     border-radius: 15px 0 0 15px;
+     width: 50px;
+     flex-shrink: 0;
+}
+.Search i {
+     margin: auto;
+     font-size: 1.2rem;
+}
+.Search .fa-Search {
+     display : none;
+}
+#maRecherche {
+     border: 2px solid #f2f2f2;
+     padding: 0.85em;  
+     margin: 0px;
+ }
+ ::placeholder{
+   color: black;
+   font-size: 16px;
+ }
+ /* *********** Filtre ********* */
