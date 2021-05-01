@@ -1,21 +1,15 @@
 
-/* téléchargement de la Police Raleway*/
-@font-face {
-    font-family: 'ralewayextralight_italic';
-    src: url('raleway-extralightitalic-webfont.woff2') format('woff2'),
-         url('raleway-extralightitalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-/* GENERALE */
+/* Police Raleway Générale*/
+
 .container {
      font-family: 'Raleway', sans-serif;
      margin: 0px;
-     padding: 2em;
+     padding: 32px;
+     
 }/* **************************HEADER************************** */
 
 /* ********** barre de navigation ********** */
-.navigateur{
+.navigator{
      display: flex;
      justify-content: space-between;
      margin-top: 10px;
@@ -33,28 +27,25 @@
  }
  nav a {
      color:black;
-     padding-left: 2em;
-     padding-right: 2em;
-     padding-top: 3.2em;
+     padding-left: 32px;
+     padding-right: 32px;
+     padding-top: 51.2px;
  }
- nav li :hover {
+ nav li :hover{
      border-top: 2px solid #0065fc;
      color: #0065fc;
  }
- .signin {
-     display: flex;
+ nav li:nth-child(3) .signin{
      align-items: center;
      padding-bottom: 8px;
-}
-.signin a {
      text-decoration: none;
      font-weight: bold;
      color: #0065fc;
-     padding-left: 2em;
+     padding-left: 32px;
  }
 /* *********** Recherche  ******** */
-.blocSearch {
-     padding-top: 1.5em;
+.blockSearch {
+     padding-top: 24px;
 }
 h1{
     font-size: 20px;
@@ -67,14 +58,14 @@ h1{
 }
 .Search i {
      margin: auto;
-     font-size: 1.2rem;
+     font-size: 19px;
 }
 .Search .fa-Search {
      display : none;
 }
-#maRecherche {
+.mySearch {
      border: 2px solid #f2f2f2;
-     padding: 0.85em;  
+     padding: 13.6px;  
      margin: 0px;
  }
  ::placeholder{
