@@ -45,31 +45,116 @@
  }
 /* *********** Recherche  ******** */
 .blockSearch {
-     padding-top: 24px;
+    padding-top: 24px;
 }
 h1{
     font-size: 20px;
 }
-.Search {
-     background-color: #f2f2f2;
-     border-radius: 15px 0 0 15px;
-     width: 50px;
-     flex-shrink: 0;
+.search {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 30px 0;
 }
-.Search i {
-     margin: auto;
-     font-size: 19px;
+.search i{
+  background-color:#F2F2F2;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px; 
+  padding: 12.9px;
 }
-.Search .fa-Search {
-     display : none;
+.submit {
+    padding: 13px;
+    font-size: 12px;
+    background-color: #0065FC;
+    cursor: pointer;
+    color: white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: none;
+    width: 160px;
 }
-.mySearch {
-     border: 2px solid #f2f2f2;
-     padding: 13.6px;  
-     margin: 0px;
- }
- ::placeholder{
-   color: black;
-   font-size: 16px;
- }
- /* *********** Filtre ********* */
+.mySearch{
+  border: 2px solid #f2f2f2;
+  padding: 0.85em;
+  margin: 0px;
+}
+::placeholder {
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+}
+.search .fa-search{
+  display: none;
+}
+
+/* *********** Filtre ********* */
+h2 {
+  font-size : medium;
+  font-weight : bold;
+}
+.filter{
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  align-items: center;
+  margin-right: 10px;
+}
+.filter-button p {
+  color : #000000;
+  font-weight : bold;
+}
+.filter-block{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+}
+.filter-button{
+   display: flex;
+   align-items: center;
+   margin-right: 32px;
+   border: 2px solid #F2F2F2;
+   border-radius: 30px; 
+   height: 40px;
+}
+.filter-button:hover{
+  color: blue;
+  background-color:#DEEBFF;
+}
+.filter-button a{
+  text-decoration: none;
+  padding-right: 16px;
+  padding-left: 16px;
+  color : #000000;
+  font-weight :bold;
+}
+.filter-button:first-child{
+  margin-left: 25px;
+}
+.filter i {
+  background-color: #DEEBFF ;
+  padding: 12.8px;
+  border-radius: 30px;
+  color: #0065fc;
+}
+.Info-filter {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.Icon-info{
+  padding-top: 8px;
+  padding-right: 16px;
+  width: 30px;
+  height: 30px;
+}
+.Icon-info .fas {
+text-align: center;
+color: #0065FC;
+font-size: 12px;
+padding: 2px;
+border: 2px solid #f2f2f2;
+border-radius: 20px;
+width: 16px;
+}
+.Info-filter p{
+  margin-left: -15px;
+}
