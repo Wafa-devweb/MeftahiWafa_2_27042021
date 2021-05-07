@@ -1,6 +1,316 @@
-@font-face {
-    font-family: 'ralewayextralight_italic';
-    src: url('raleway-extralightitalic-webfont.woff2') format('woff2'),
-         url('raleway-extralightitalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+
+/* Police Raleway Générale*/
+
+@import url ('https://fonts.googleapis.com/css2? family = Raleway: ital, wght @ 0,100; 0,200; 0,300; 0,400; 0,500; 0,600; 0,700; 0,800; 0,900; 1,100; 1,200; 1 300; 1 400; 1 500; 1 600; 1 700; 1 800; 1 900 & display = swap ');
+
+/****Générale*****/
+body{
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+.container {
+     margin: 0px 50px 50px;
+  }
+div{
+  display : block;
+}
+/* **************************HEADER************************** */
+
+/* ********** barre de navigation ********** */
+.navigator{
+     display: flex;
+     justify-content: space-between;
+     margin-top: 10px;
+ }
+ .logo{
+     height: 50px; 
+ }
+ .menu {
+   display: flex;
+ }
+ nav ul{
+     display: flex;
+     align-items: center;
+     list-style: none;
+ }
+ nav a {
+     color:black;
+     padding-left: 32px;
+     padding-right: 32px;
+     padding-top: 51.2px;
+ }
+ nav li :hover{
+     border-top: 2px solid #0065fc;
+     color: #0065fc;
+ }
+ nav li:nth-child(3) .signin{
+     align-items: center;
+     padding-bottom: 8px;
+     text-decoration: none;
+     font-weight: bold;
+     color: #0065fc;
+     padding-left: 32px;
+ }
+/* *********** Recherche  ******** */
+.blockSearch {
+    padding-top: 24px;
+}
+h1{
+    font-size: 20px;
+}
+.search {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 30px 0;
+}
+.search i{
+  background-color:#F2F2F2;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px; 
+  padding: 12.9px;
+}
+.submit {
+    padding: 13px;
+    font-size: 12px;
+    background-color: #0065FC;
+    cursor: pointer;
+    color: white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: none;
+    width: 160px;
+}
+.mySearch{
+  border: 2px solid #f2f2f2;
+  padding: 0.85em;
+  margin: 0px;
+}
+::placeholder {
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+}
+.search .fa-search{
+  display: none;
+}
+
+/* *********** Filtre ********* */
+h2 {
+  font-size : small;
+  font-weight : bold;
+}
+.filter{
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  align-items: center;
+  margin-right: 10px;
+}
+.filter-button p {
+  color : #000000;
+  font-weight : bold;
+}
+.filter-block{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+}
+.filter-button{
+   display: flex;
+   align-items: center;
+   margin-right: 32px;
+   border: 2px solid #F2F2F2;
+   border-radius: 30px; 
+   height: 40px;
+}
+.filter-button:hover{
+  color: blue;
+  background-color:#DEEBFF;
+}
+.filter-button a{
+  text-decoration: none;
+  padding-right: 16px;
+  padding-left: 16px;
+  color : #000000;
+  font-weight :bold;
+}
+.filter-button:first-child{
+  margin-left: 25px;
+}
+.filter i {
+  background-color: #DEEBFF ;
+  padding: 12.8px;
+  border-radius: 30px;
+  color: #0065fc;
+}
+.Info-filter {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.Icon-info{
+  padding-top: 8px;
+  padding-right: 16px;
+  width: 30px;
+  height: 30px;
+}
+.Icon-info .fas {
+text-align: center;
+color: #0065FC;
+font-size: 12px;
+padding: 2px;
+border: 2px solid #f2f2f2;
+border-radius: 20px;
+width: 16px;
+}
+.Info-filter p{
+  margin-left: -15px;
+}
+
+/********* SECTION hebergement**********/
+
+.container-Hotels{
+  display :flex;
+}
+
+.SectionHotels, .popular {
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  padding: 40px;
+  padding-bottom: 10px;
+}
+.container-Hotels a {
+  text-decoration: none;
+  color: inherit;
+}
+.SectionHotels{
+  flex: 2;
+  order: 2px;
+}
+.SectionHotels > h3{
+  margin: 0;
+}
+.hotelsTab{
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+  gap: 30px;
+  margin: 30px 0 30px;
+}
+.hotelsTab:not{
+  display: block;
+}
+.hotelFrame{
+  display: grid;
+  height: 220px;
+  grid-template-rows: 1fr 40%;
+  box-sizing: border-box;
+  border: 5px solid #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 7px #c1c1c1;
+}
+.hotelFrame img{
+  height: 126px;
+  width: 100%;
+  object-fit: cover;
+}
+.hotelFrame:hover{
+    transform:scale(1.05);
+    transition: all 0.2s ease-in-out;
+  }
+  
+.hotel-Description{
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #fff;
+  padding: 5px 10px;
+  display : flex ;
+}
+.hotel-Description p{
+  margin: 0;
+}
+.hotelRate{
+  word-spacing: -1ch;
+}
+.fa-star{
+  font-size: .8rem;
+  letter-spacing: 2px;
+}
+.blueStar{
+  color: #0065FC;
+}
+.greyStar{
+  color: #f2f2f2;
+}
+.showMore{
+  font-weight: 700;
+  font-size: 19px;
+  margin: 0 30px;
+}
+
+/******** ASIDE Popular *********/
+
+.popular{
+  flex: 1;
+  margin-left: 3%;
+}
+
+.popularIcon{
+  justify-content: space-between;
+  align-items: baseline;
+  display: flex;
+}
+
+.popularIcon h3{
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.popularIcon i{
+  font-size: 24px;
+}
+
+.popularFrame{
+  height : 150px;
+  border: 5px solid #fff;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  margin-right: 3%;
+  box-shadow: 0 0 7px #c1c1c1;
+  box-sizing: border-box;
+  overflow: hidden;
+  display : flex;
+}
+.popularFrame:hover{
+  transform:scale(1.05);
+  transition: all 0.2s ease-in-out;
+}
+.popularFrame img{
+  width: 40%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.popularDescription  {
+  flex: 1;
+  background-color: #fff;
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+  padding: 10px;
+  margin:0px;
+}
+
+.hotelName{
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.popularDescription .hotelName + p{
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+/******** ACTIVITE ***********/
