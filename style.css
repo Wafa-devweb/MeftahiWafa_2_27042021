@@ -5,45 +5,52 @@
 
 /****Générale*****/
 body{
-  margin: 0px;
-  box-sizing: border-box;
   font-family: "Raleway", sans-serif;
 }
 .container {
-     margin: 0px 50px 50px;
-  }
-div{
-  display : block;
-}
+  margin : 0px;
+  padding: 30px;
+  padding-top: 10px
+} 
+
 /* **************************HEADER************************** */
 
 /* ********** barre de navigation ********** */
 .navigator{
-     display: flex;
-     justify-content: space-between;
-     margin-top: 10px;
- }
- .logo{
-     height: 50px; 
- }
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.logo {
+   margin: 30px;
+}
+
  .menu {
    display: flex;
  }
+
  nav ul{
-     display: flex;
-     align-items: center;
-     list-style: none;
+    display: flex;
+    align-items: center;
+    list-style: none;
+
  }
  nav a {
      color:black;
      padding-left: 32px;
      padding-right: 32px;
-     padding-top: 51.2px;
+     padding-top: 40px;
+     text-decoration : none;
+ }
+nav a:hover {
+  text-decoration: #0065FC;
+  color: #0065FC;
+     border-top: 2px solid #0065fc;
  }
  nav li :hover{
-     border-top: 2px solid #0065fc;
-     color: #0065fc;
- }
+  border-top: 2px solid #0065fc;
+  color: #0065fc;
+}
  nav li:nth-child(3) .signin{
      align-items: center;
      padding-bottom: 8px;
@@ -97,7 +104,7 @@ h1{
 
 /* *********** Filtre ********* */
 h2 {
-  font-size : small;
+  font-size : medium;
   font-weight : bold;
 }
 .filter{
@@ -170,37 +177,37 @@ width: 16px;
 
 /********* SECTION hebergement**********/
 
-.container-Hotels{
+.container-hotels{
   display :flex;
 }
 
-.SectionHotels, .popular {
+.sectionhotels, .popular {
   background-color: #f2f2f2;
   border-radius: 20px;
   padding: 40px;
   padding-bottom: 10px;
 }
-.container-Hotels a {
+.container-hotels a {
   text-decoration: none;
   color: inherit;
 }
-.SectionHotels{
+.sectionhotels{
   flex: 2;
   order: 2px;
 }
-.SectionHotels > h3{
+.sectionhotels > h3{
   margin: 0;
 }
-.hotelsTab{
+.hotels-tab{
   display: grid;
   grid-template: repeat(2, 1fr) / repeat(3, 1fr);
   gap: 30px;
   margin: 30px 0 30px;
 }
-.hotelsTab:not{
+.hotels-tab:not{
   display: block;
 }
-.hotelFrame{
+.hotel-frame{
   display: grid;
   height: 220px;
   grid-template-rows: 1fr 40%;
@@ -210,27 +217,27 @@ width: 16px;
   overflow: hidden;
   box-shadow: 0 0 7px #c1c1c1;
 }
-.hotelFrame img{
+.hotel-frame img{
   height: 126px;
   width: 100%;
   object-fit: cover;
 }
-.hotelFrame:hover{
+.hotel-frame:hover{
     transform:scale(1.05);
     transition: all 0.2s ease-in-out;
   }
   
-.hotel-Description{
+.hotel-description{
   flex-direction: column;
   justify-content: space-around;
   background-color: #fff;
   padding: 5px 10px;
   display : flex ;
 }
-.hotel-Description p{
+.hotel-description p{
   margin: 0;
 }
-.hotelRate{
+.hotel-rate{
   word-spacing: -1ch;
 }
 .fa-star{
@@ -243,7 +250,7 @@ width: 16px;
 .greyStar{
   color: #f2f2f2;
 }
-.showMore{
+.showmore{
   font-weight: 700;
   font-size: 19px;
   margin: 0 30px;
@@ -256,22 +263,22 @@ width: 16px;
   margin-left: 3%;
 }
 
-.popularIcon{
+.popular-icon{
   justify-content: space-between;
   align-items: baseline;
   display: flex;
 }
 
-.popularIcon h3{
+.popular-icon h3{
   margin-top: 0;
   margin-bottom: 25px;
 }
 
-.popularIcon i{
+.popular-icon i{
   font-size: 24px;
 }
 
-.popularFrame{
+.popular-frame{
   height : 150px;
   border: 5px solid #fff;
   border-radius: 15px;
@@ -282,17 +289,17 @@ width: 16px;
   overflow: hidden;
   display : flex;
 }
-.popularFrame:hover{
+.popular-frame:hover{
   transform:scale(1.05);
   transition: all 0.2s ease-in-out;
 }
-.popularFrame img{
+.popular-frame img{
   width: 40%;
   height: 100%;
   object-fit: cover;
 }
 
-.popularDescription  {
+.popular-description  {
   flex: 1;
   background-color: #fff;
   flex-direction: column;
@@ -302,13 +309,13 @@ width: 16px;
   margin:0px;
 }
 
-.hotelName{
+.hotel-name{
   margin: 0;
   font-weight: 700;
   font-size: 18px;
 }
 
-.popularDescription .hotelName + p{
+.popular-description .hotel-name + p{
   margin-top: 8px;
   margin-bottom: 0;
 }
