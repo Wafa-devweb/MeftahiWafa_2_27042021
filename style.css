@@ -397,16 +397,23 @@ padding-bottom: 0.5em;
 footer{
   padding: 40px 50px 50px;
   background-color: #f2f2f2;
+  display : flex ;
 }
 
 footer div{
   flex: 1;
 }
-
+h5 {
+  font-size: medium;
+}
 footer li{
   margin-bottom: 15px;
 }
-
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
 footer a:hover{
   font-weight: 600;
   color: #0065FC;
