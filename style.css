@@ -8,16 +8,16 @@ body{
   font-family: "Raleway", sans-serif;
 }
 .container {
-  margin : 0px;
   padding: 30px;
   padding-top: 10px
 } 
+
 a {
   text-decoration: none;
   color: black;
 }
 li{
-  text-decoration: none;
+  list-style: none;
 }
 
 /* **************************HEADER************************** */
@@ -31,30 +31,19 @@ li{
 .logo {
    margin: 30px;
 }
-.menu {
-  display: flex;
-}
 
 nav ul{
-   display: flex;
-    align-items: center;
-    list-style: none;
+    display: flex;
+ }
 
- }
  nav a {
-     padding-left: 32px;
-     padding-right: 32px;
-     padding-top: 55px;
+   padding: 55px 32px 32px
  }
-nav a:hover {
+ nav a:hover {
   text-decoration: #0065FC;
-  color: #0065FC;
   border-top: 2px solid #0065fc;
  }
- nav li :hover{
-  border-top: 2px solid #0065fc;
-  color: #0065fc;
-}
+
  nav li:nth-child(3) .signin{
      align-items: center;
      padding-bottom: 8px;
@@ -71,18 +60,18 @@ h1{
 }
 .search {
   display: flex;
-  align-items: center;
   margin: 10px 0 30px 0;
 }
 .search i{
   background-color:#F2F2F2;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px; 
-  padding: 12.9px;
+  padding: 13px;
 }
 .submit {
     padding: 13px;
     font-size: 12px;
+    font-weight: bold;
     background-color: #0065FC;
     cursor: pointer;
     color: white;
@@ -93,8 +82,6 @@ h1{
 }
 .mySearch{
   border: 2px solid #f2f2f2;
-  padding: 0.85em;
-  margin: 0px;
 }
 ::placeholder {
   color: black;
@@ -112,18 +99,10 @@ h2 {
 }
 .filter{
   display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  align-items: center;
-  margin-right: 10px;
 }
-.filter-button p {
-  color : #000000;
-  font-weight : bold;
-}
+
 .filter-block{
     display: flex;
-    flex-wrap: wrap;
     align-items: center; 
 }
 .filter-button{
@@ -141,7 +120,6 @@ h2 {
 .filter-button a{
   padding-right: 16px;
   padding-left: 16px;
-  color : #000000;
   font-weight :bold;
 }
 .filter-button:first-child{
@@ -149,14 +127,14 @@ h2 {
 }
 .filter i {
   background-color: #DEEBFF ;
-  padding: 12.8px;
+  padding: 13px;
   border-radius: 30px;
   color: #0065fc;
 }
 .Info-filter {
   display: flex;
   align-items: center;
-  margin-top: 10px;
+  margin: 10px 0px 10px 0px;
 }
 .Icon-info{
   padding-top: 8px;
@@ -209,7 +187,7 @@ width: 16px;
 }
 .hotel-frame{
   display: grid;
-  height: 220px;
+  height: 200px;
   grid-template-rows: 1fr 40%;
   box-sizing: border-box;
   border: 5px solid #fff;
@@ -228,12 +206,12 @@ width: 16px;
   }
   
 .hotel-description{
-  flex-direction: column;
-  justify-content: space-around;
-  background-color: #fff;
-  padding: 5px 10px;
-  display : flex ;
+flex-direction: column;
+justify-content: space-around;
+background-color: #fff;
+padding: 5px 8px;
 }
+
 .hotel-description p{
   margin: 0;
 }
@@ -241,7 +219,7 @@ width: 16px;
   word-spacing: -1ch;
 }
 .fa-star{
-  font-size: .8rem;
+  font-size: 13px;
   letter-spacing: 2px;
 }
 .blueStar{
@@ -283,7 +261,7 @@ width: 16px;
   border: 5px solid #fff;
   border-radius: 15px;
   margin-bottom: 30px;
-  margin-right: 3%;
+  margin-right: 10%;
   box-shadow: 0 0 7px #c1c1c1;
   box-sizing: border-box;
   overflow: hidden;
@@ -295,7 +273,6 @@ width: 16px;
 }
 .popular-frame img{
   width: 40%;
-  height: 100%;
   object-fit: cover;
 }
 
@@ -320,9 +297,9 @@ width: 16px;
   margin-bottom: 0;
 }
 
-/******** ACTIVITE ***********/
+/********Section ACTIVITE ***********/
 .activity{
-  margin-top: 45px;
+padding: 20px 0;
 }
 
 .activity h3{
@@ -331,23 +308,20 @@ width: 16px;
 
 .activity-flex{
   display: flex;
-  width: 104em;
 }
 
 .activity-box{
   display: flex;
-  width: 45%;
 }
 
 .duo-box1{
   width: 50%;
-  margin-left: 3em;
-  margin-right: 3em;
+  margin: 0px 48px;
 }
 
 .duo-box2{
   width: 50%;
-  margin-left: 3em;
+  margin-left: 48px;
 }
 
 .box{
@@ -372,7 +346,7 @@ border-radius: 15px 15px 0px 0px;
 .box, .box-activity1, .box-activity2{
 box-shadow: 4px 4px 8px rgb(190, 189, 189);
 border-radius: 15px;
-padding-bottom: 0.5em;
+padding-bottom: 8px;
 } 
 
 .box:hover, .box-activity1:hover, .box-activity2:hover{
@@ -381,11 +355,11 @@ padding-bottom: 0.5em;
 }
 
 .duo-box1 .box-activity1{
-  margin-bottom: 2em; 
+  margin-bottom: 32px; 
 }
 
 .duo-box2 .box-activity1{
-  margin-top: 2em;
+  margin-top: 32px;
 }
 
 .activity-flex h4{
