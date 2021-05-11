@@ -1,4 +1,3 @@
-
 /* Police Raleway Générale*/
 
 @import url ('https://fonts.googleapis.com/css2? family = Raleway: ital, wght @ 0,100; 0,200; 0,300; 0,400; 0,500; 0,600; 0,700; 0,800; 0,900; 1,100; 1,200; 1 300; 1 400; 1 500; 1 600; 1 700; 1 800; 1 900 & display = swap ');
@@ -6,12 +5,12 @@
 /****Générale*****/
 body{
   font-family: "Raleway", sans-serif;
+  margin: 0 ;
 }
 .container {
   padding: 30px;
   padding-top: 10px
-} 
-
+}
 a {
   text-decoration: none;
   color: black;
@@ -24,33 +23,38 @@ li{
 
 /* ********** barre de navigation ********** */
 .navigator{
-  display: flex;
   justify-content: space-between;
-  margin-top: 25px;
+  margin-bottom: 35px;
+  display:flex;
 }
-.logo {
-   margin: 30px;
+.menu {
+  display: flex;
+  margin: 0;
+}
+#logo{
+  margin-top: 30px;
+  flex: 1;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  padding-top: 40px;
+}
+nav a{
+  padding: 40px 30px 0;
+}
+.signin {
+  color: #0065FC;
+  font-weight: 700;
+  padding: 40px 40px 0;
+}
+nav li a:hover{
+  border-top: 2px solid #0065FC;
+  padding-top: 38px;
 }
 
-nav ul{
-    display: flex;
- }
-
- nav a {
-   padding: 55px 32px 32px
- }
- nav a:hover {
-  text-decoration: #0065FC;
-  border-top: 2px solid #0065fc;
- }
-
- nav li:nth-child(3) .signin{
-     align-items: center;
-     padding-bottom: 8px;
-     font-weight: bold;
-     color: #0065fc;
-     padding-left: 32px;
- }
 /* *********** Recherche  ******** */
 .blockSearch {
     padding-top: 24px;
@@ -301,79 +305,65 @@ padding: 5px 8px;
 .activity{
 padding: 20px 0;
 }
-
 .activity h3{
   font-size: 18px;
 }
-
 .activity-flex{
   display: flex;
 }
-
 .activity-box{
   display: flex;
 }
-
 .duo-box1{
   width: 50%;
   margin: 0px 48px;
 }
-
 .duo-box2{
   width: 50%;
   margin-left: 48px;
 }
-
 .box{
   width: 50%;
 }
-
 .activity-flex img {
 width: 100%;
 height: 450px;
 object-fit: cover;
 border-radius: 15px 15px 0px 0px;
 }
-
 .activity-flex .box-activity1 img{
   height: 220px;
 }
-
 .activity-flex .box-activity2 img{
   height: 140px;
 }
-
 .box, .box-activity1, .box-activity2{
 box-shadow: 4px 4px 8px rgb(190, 189, 189);
 border-radius: 15px;
 padding-bottom: 8px;
 } 
-
 .box:hover, .box-activity1:hover, .box-activity2:hover{
   transform:scale(1.05);
   transition: all 0.2s ease-in-out;
 }
-
 .duo-box1 .box-activity1{
   margin-bottom: 32px; 
 }
-
 .duo-box2 .box-activity1{
   margin-top: 32px;
 }
-
 .activity-flex h4{
   background-color: white;
   padding-left: 15px;
   font-size: 14px;
 }
+
 /**************** Footer **************/
 footer{
   padding: 40px 50px 50px;
   background-color: #f2f2f2;
   display : flex ;
 }
-
 footer div{
   flex: 1;
 }
