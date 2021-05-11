@@ -382,3 +382,232 @@ footer a:hover{
   font-weight: 600;
   color: #0065FC;
 }
+
+/* ******************* media squeries ********************* */
+
+/*********** Mobile *************/
+@media only screen and (max-width: 600px){
+  body {
+    margin: 0;
+  }
+  .container {
+    padding: 10px;
+    padding-top: 10px;
+  }
+  /****Navigator**/
+  .navigator {
+    margin: 0;
+    flex-direction: column;
+  }
+  .logo { 
+    margin-left: 20px;
+  }
+  .menu {
+    order: 3;
+    display: block;
+  }
+  nav ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  nav li {
+    width: 50%;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 3px solid #f2f2f2;
+  }
+  .signin {
+    align-self: flex-end;
+    padding: 0;
+    margin-right: 20px;
+    position: relative;
+    bottom: 30px;
+  }
+  /******Search *****/
+  h1 {
+    font-size: 18px;
+  }
+  .blockSearch, .filter, .Info-filter{
+    margin: 0;
+  } 
+  .search {
+    margin :20px 0 30px;
+  }
+  .mySearch {
+    width : 270px ;
+  }
+  .submit {
+    display: none;
+}
+  .search .fa-search{
+    display: initial;
+    color: #f2f2f2;
+    background-color: #0065FC;
+    border-radius: 0px 15px 15px 0px;
+    cursor: pointer;
+  }
+  /****Filter****/
+
+  .filter{
+    margin-bottom: 12px;
+      flex-wrap: wrap;
+      font-weight: 700;
+      font-size: 18px;
+  }
+  .filter-block{
+    flex-wrap: wrap;
+  }
+  .filter-button:first-child {
+    margin-left : 0;
+   }
+  .filter-button{
+    margin: 0 16px 16px 0;
+  }
+  /******** Hebergement/popular ********/
+  .popular{
+    border-radius: 0;
+    padding: 40px 20px 30px;
+    margin-bottom: 40px;
+  }
+  .container-hotels{
+    display: flex;
+    flex-direction: column-reverse;
+   }
+  .sectionhotels {
+    padding: 20px;
+    background-color: initial;
+  }
+  .hotels-tab {
+    grid-template: repeat(6, 1fr) / 1fr;
+    gap: 15px;
+  }
+  /******* Activity ********/
+  
+  .activity-flex {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+  }
+  .activity-box {
+    flex-direction: column;
+    width: 95%;
+    align-items: center;
+  }
+  .activity h3 {
+    padding-left : 32px;
+  }
+  .box {
+    width: 95%;
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+  .duo-box1, .duo-box2{
+    flex-direction: column;
+    width: 95%;
+    margin: 0px;
+  }
+  .box-activity1, .box-activity2{
+    width : 100%;
+  }
+  .activity-flex img, .box-activity1 img{ 
+    height: 126px;
+    width: 100%;
+  }
+  .duo-box2 .box-activity1 img{
+    height: 126px;
+  }
+  .duo-box1 .box-activity1 img{
+    height: 126px;
+  }
+  /*****Footer***/
+  
+  footer {
+    flex-direction: column;
+    padding: 30px 30px;
+  }
+}
+/************* Tablet / small screen ***************/
+
+  @media screen and (min-width: 731px) and (max-width: 1024px){
+  .filter {
+    flex-direction: column;
+  }
+  h2{
+    align-self: auto;
+    margin-bottom: 15px;
+  }
+
+  /**Search**/
+  .filter-button{
+    margin: 0 16px 16px 0;
+  }
+  .filter-block{
+    flex-wrap: wrap;
+  }
+  .filter-button:first-child {
+    margin : 0 16px 16px 0;
+  }
+
+  /***** hotels *****/
+  .container-hotels{
+    flex-direction: column;
+  }
+  .sectionhotels{
+    order: 2;
+  }
+  .popular {
+    margin: 0 0 20px;
+  }
+
+  /****Activity****/
+  .activity-box {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 32px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+  .activity h3 {
+    padding-left: 20px;
+  }
+  .box{
+    width: 100%;
+  }
+  .activity-flex img {
+    height: 200px;
+  }
+  .duo-box1, .duo-box2 {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .activity-flex .box-activity1 img{
+    height: 200px;
+  }
+  .box-activity2{
+    margin: 0px;
+    margin-top: 32px;
+  }
+  .activity-flex .box-activity2 img {
+    height: 200px;
+  }
+  .duo-box1 .box-activity1{
+    margin-top:32px;
+  }
+
+  /***Footer***/
+  footer div {
+    padding: 10px;
+  }
+}
+/*************Desktop, widescreen ****************/
+
+/**** Hotels ******/
+   @media only screen and (max-width: 1280px){
+  .sectionhotels {
+    flex: 1.5;
+  }
+  .hotels-tab {
+    margin: 30px 0;
+  }
+}
