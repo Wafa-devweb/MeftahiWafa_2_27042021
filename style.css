@@ -2,9 +2,6 @@
 
 @import url ('https://fonts.googleapis.com/css2? family = Raleway: ital, wght @ 0,100; 0,200; 0,300; 0,400; 0,500; 0,600; 0,700; 0,800; 0,900; 1,100; 1,200; 1 300; 1 400; 1 500; 1 600; 1 700; 1 800; 1 900 & display = swap ');
 
-<<<<<<< HEAD
-
-=======
 /****Générale*****/
 body{
   font-family: "Raleway", sans-serif;
@@ -387,12 +384,10 @@ footer a:hover{
 }
 
 /* ******************* media squeries ********************* */
-
+ changement pour les ecran mobile/tablette/et les ecran large
 /*********** Mobile *************/
 @media only screen and (max-width: 600px){
-  body {
-    margin: 0;
-  }
+
   .container {
     padding: 10px;
     padding-top: 10px;
@@ -614,4 +609,3 @@ footer a:hover{
     margin: 30px 0;
   }
 }
->>>>>>> footer
